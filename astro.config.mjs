@@ -155,6 +155,9 @@ export default defineConfig({
     ],
   },
   vite: {
+    preview: {
+      allowedHosts: ['vibhavsharmaha.com']
+    },
     build: {
       rollupOptions: {
         onwarn(warning, warn) {
