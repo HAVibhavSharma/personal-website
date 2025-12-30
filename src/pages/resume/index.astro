@@ -1,0 +1,27 @@
+---
+import MainGridLayout from "../../layouts/MainGridLayout.astro";
+import { Icon } from "astro-icon/components";
+
+const resumePath = "/resume/Vibhav_resume.pdf";
+---
+
+<MainGridLayout title="Resume" description="Vibhav Sharma's Resume">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative">
+        <div class="card-base z-10 px-6 py-6 relative w-full">
+
+
+            <div class="w-full bg-white dark:bg-neutral-900 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                    src={resumePath}
+                    class="w-full h-[calc(100vh-12rem)] min-h-[600px]"
+                    title="Resume PDF Viewer"
+                    loading="lazy"
+                />
+            </div>
+
+            <div class="mt-4 text-sm text-neutral-600 dark:text-neutral-400 text-center">
+                If the PDF doesn't display, you can <a href={resumePath} target="_blank" rel="noopener noreferrer" class="underline hover:text-[oklch(0.75_0.14_var(--hue))] transition-colors">open it in a new tab</a> or download it using the button above.
+            </div>
+        </div>
+    </div>
+</MainGridLayout>
