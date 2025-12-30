@@ -25,7 +25,7 @@ For example, when someone visits companydomain.com, the request does not go stra
 
 ## What actually happened?
 
-![Cloudflare Incident Diagram](./diagram.png)
+
 
 ### Context 1
 
